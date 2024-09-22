@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.profile-frame {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.profile-frame img {
+    width: 100%; /* Make sure image covers the frame */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Crop image to fit */
+}
+
+.profile-info, .health-check {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.avatar-options {
+    margin-top: 10px;
+}
+
+.avatar-options img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#uploadButton {
+    margin-top: 10px;
+}
+
+/* Gaya untuk ikon logout */
+.footer-menu {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-menu a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333; /* Warna teks */
+}
+
+.footer-menu .icon {
+    width: 20px; /* Ukuran ikon */
+    height: 20px; /* Ukuran ikon */
+    vertical-align: middle;
+    margin-right: 5px; /* Jarak antara ikon dan teks */
+}
+
+#logoutBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Jarak antara tombol edit profil dan logout */
+}
+
+#logoutBtn:hover .icon {
+    color: red; /* Warna ikon saat hover */
+}
+
+/* Gaya untuk tombol kembali */
+.back-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.back-button .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px; /* Jarak antara ikon dan teks */
+}
